@@ -15,9 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
+        .hero-bg-city {
+            background: url(images/hero-bg.jpg) no-repeat center bottom;
+            background-size: cover;
+        }
 
-        .hero-bg {
-            background: url(images/hero-bg-kaldega.jpg) no-repeat center bottom;
+        .hero-bg-graph {
+            background: url(images/hero-bg-kalle.svg) no-repeat center bottom;
             background-size: cover;
         }
 
@@ -34,12 +38,31 @@
             color: black;
         }
 
-        nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show>.nav-link {
             border-bottom: solid #D6342E 2px;
         }
 
         .shadow {
-        box-shadow: 0 .5rem 1rem rgba(214,52,46,.15)!important;
+            box-shadow: 0 .5rem 1rem rgba(214, 52, 46, .15) !important;
+        }
+
+        .categories .btn {
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+
+        .categories .btn.cat-a {
+            background-image: url(images/bike.svg);
+        }
+
+        .categories .btn.cat-b {
+            background-image: url(images/car.svg);
+        }
+
+        .categories .btn.cat-c {
+            background-image: url(images/truck.svg);
         }
 
 
@@ -48,9 +71,6 @@
             background-color: none;
             border: none;
         }
-
-    
-
     </style>
 
 
@@ -58,140 +78,142 @@
 </head>
 
 <body>
-    <div class="hero-bg mb-5">
+        <div class="hero-bg-city mb-5">
+        <div class="hero-bg-graph">
 
-        <div class="container-fluid">
-            <div class="row text-center text-white pt-3">
-                <div class="col">
-                    <p>Kogemused alates 1995</p>
-                </div>
-                <div class="col">
-                    <p>Kõige sõbralikumad sõiduõpetajad</p>
-                </div>
-                <div class="col">
-                    <p>Lõppkoolitus meilt</p>
-                </div>
-
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/odium_logo.svg"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Koolitused</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Miks Odium?</a>
-                        </li>
+                <div class="row text-center text-white pt-3">
+                    <div class="col">
+                        <p>Kogemused alates 1995</p>
+                    </div>
+                    <div class="col">
+                        <p>Kõige sõbralikumad sõiduõpetajad</p>
+                    </div>
+                    <div class="col">
+                        <p>Lõppkoolitus meilt</p>
+                    </div>
 
-
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-primary shadow" type="submit">e-Odium</button>
-                    </form>
                 </div>
             </div>
-        </nav>
 
-        <div class="container my-5 pb-5">
-            <div class="row text-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/odium_logo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Koolitused</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Miks Odium?</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn btn-outline-primary shadow" type="submit">e-Odium</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container my-5 pb-5">
+                <div class="row text-white">
+                    <div class="col-6">
+                        <h1>Õpetame sind autoga sõitma?</h1>
+                        <p>Korraldame AM, A, A1, A2, B, BE, C, CE- ja D-kat. mootorsõidukijuhi kursuseid, samuti
+                            ametikoolitusi veoauto- ja taksojuhtidele ning esmaabi koolitusi eesti, vene ja inglise
+                            keeles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row categories">
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-primary btn-lg cat-a">A kategooria</button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-primary btn-lg cat-b">B kategooria</button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-primary btn-lg cat-c">C kategooria</button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-primary btn-lg cat-c">D kategooria</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+
+            <div class="row justify-content-between mb-2">
+                <div class="row mb-3">
+                    <h1>Koolitused</h1>
+                </div>
+
                 <div class="col-6">
-                    <h1>Õpetame sind autoga sõitma?</h1>
-                    <p>Korraldame AM, A, A1, A2, B, BE, C, CE- ja D-kat. mootorsõidukijuhi kursuseid, samuti
-                        ametikoolitusi veoauto- ja taksojuhtidele ning esmaabi koolitusi eesti, vene ja inglise keeles.
-                    </p>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-primary">A-kategooria</button>
+                    <p>Odium Autokool pakub võimalust omandada A, A1, A2, AM, B, BE, C, CE- ja D-kategooria
+                        sõidukijuhi oskuseid kogenud õpetajate käe all nii eesti, vene kui ka inglise keeles.
+                        Korraldame ka veautojuhi ametikoolitusi ning esmaabi koolitust.</p>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary">B-kategooria</button>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary">C-kategooria</button>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary">D-kategooria</button>
+
+
+                <div class="col-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Esmaabikoolitused</li>
+                        <li class="list-group-item">Libedasõit</li>
+                        <li class="list-group-item">Pimedasõit</li>
+                        <li class="list-group-item">Täiendkoolitused</li>
+                    </ul>
+
                 </div>
 
             </div>
-        </div>
-    </div>
 
-    <div class="container">
-
-        <div class="row justify-content-between mb-2">
             <div class="row mb-3">
-                <h1>Koolitused</h1>
+                <h1>A kategooria</h1>
             </div>
 
-            <div class="col-6">
-              
-                <p>Odium Autokool pakub võimalust omandada A, A1, A2, AM, B, BE, C, CE- ja D-kategooria
-                    sõidukijuhi oskuseid kogenud õpetajate käe all nii eesti, vene kui ka inglise keeles.
-                    Korraldame ka veautojuhi ametikoolitusi ning esmaabi koolitust.</p>
+            <div class="row justify-content-start">
+                <div class="col">
+                    <h2>A</h2>
+                    <h3>Mootoratas</h3>
+                    <p>01.märts 2020</p>
+                    <h2>380€</h2>
+                </div>
+                <div class="col">
+                    <h2>A1</h2>
+                    <h3>Mootoratas 2</h3>
+                    <p>01.märts 2020</p>
+                    <h2>380€</h2>
+                </div>
+                <div class="col">
+                    <h2>A2</h2>
+                    <h3>Mootoratas 3</h3>
+                    <p>01.märts 2020</p>
+                    <h2>300€</h2>
+                </div>
+                <div class="col">
+                    <h2>AM</h2>
+                    <h3>Mopeed</h3>
+                    <p>01.märts 2020</p>
+                    <h3>120€</h2>
+                </div>
+
             </div>
-
-
-            <div class="col-3">
-                <ul class="list-group">
-                    <li class="list-group-item">Esmaabikoolitused</li>
-                    <li class="list-group-item">Libedasõit</li>
-                    <li class="list-group-item">Pimedasõit</li>
-                    <li class="list-group-item">Täiendkoolitused</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-        <div class="row mb-3">
-            <h1>A kategooria</h1>
-        </div>
-
-        <div class="row justify-content-start">
-            <div class="col">
-                <h2>A</h2>
-                <h3>Mootoratas</h3>
-                <p>01.märts 2020</p>
-                <h2>380€</h2>
-            </div>
-            <div class="col">
-                <h2>A1</h2>
-                <h3>Mootoratas 2</h3>
-                <p>01.märts 2020</p>
-                <h2>380€</h2>
-            </div>
-            <div class="col">
-                <h2>A2</h2>
-                <h3>Mootoratas 3</h3>
-                <p>01.märts 2020</p>
-                <h2>300€</h2>
-            </div>
-            <div class="col">
-                <h2>AM</h2>
-                <h3>Mopeed</h3>
-                <p>01.märts 2020</p>
-                <h3>120€</h2>
-            </div>
-
-        </div>
-
-    </div>
+         </div>
+   
 
 
 
